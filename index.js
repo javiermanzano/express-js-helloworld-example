@@ -3,7 +3,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function(req, res){
-  res.json({ hello: 'Soamee rules!', env: 'develop sajsjsi' });
+  res.json({ hello: 'Soamee rules!', env: 'production' });
 });
 
 const port = process.env.PORT || 3000

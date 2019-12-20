@@ -6,7 +6,8 @@ app.get('/', function(req, res){
   res.json({ hello: 'Soamee rules!' });
 });
 
+const port = process.env.PORT || 3000
 if (!module.parent) {
-  app.listen(3000);
-  console.log('Express started on port :3000');
+  app.listen(port);
+  console.log(`Express started on port ${port}`);
 }
